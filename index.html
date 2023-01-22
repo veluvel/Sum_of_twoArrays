@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorting Array</title>
+  </head>
+  <body>
+    <script>
+      // sum of two arrays
+      function sumArray(a, b) {
+        var c = [];
+        for (var i = 0; i < Math.max(a.length, b.length); i++) {
+          c.push((a[i] || 0) + (b[i] || 0));
+        }
+        return c;
+      }
+      var a = [1, 2, 3, 4];
+      var b = [1, 2, 3, 4, 6];
+      console.log(sumArray(a, b));
+    </script>
+  </body>
+</html>
